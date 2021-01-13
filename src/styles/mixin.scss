@@ -1,0 +1,114 @@
+/**
+ * @ Author: feixiang.wu
+ * @ Create Time: 2020-04-02 09:49:50
+ * @ Modified by: feixiang.wu
+ * @ Modified time: 2020-06-30 09:15:29
+ * @ Description: mixin
+ */
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 溢出显示省略号
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 背景图片地址和大小
+@mixin bis($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+//定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+@mixin vercenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+//flex 竖直方向上的布局布局和 子元素 对其方式
+@mixin verflex {
+  display: flex;
+  flex-direction: column;
+}
+
+//flex 布局和 子元素 对其方式
+@mixin flex($type: space-between){
+  display: flex;
+  justify-content: $type;
+}
+
+//定义一个混合宏
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} { @content; }
+  @-moz-keyframes #{$animationName} { @content; }
+  @-o-keyframes #{$animationName} { @content; }
+  @keyframes #{$animationName} { @content; }
+}
+
+// 颜色 - 红色
+@mixin color-red {
+  color: $waring-text-color;
+}
+
+// 字体
+@mixin fz52px {
+  font-size: 52px;
+}
+
+// 文本
+@mixin mt-regular {
+  font-family: $reg-font-family;
+}
+
+// 混合
+@mixin num-err {
+  @include color-red;
+  @include fz52px;
+  @include mt-regular;
+}
