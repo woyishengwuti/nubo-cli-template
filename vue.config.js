@@ -2,8 +2,8 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-04-02 09:49:51
  * @ Modified by: feixiang.wu
- * @ Modified time: 2021-01-13 11:03:50
- * @ Description: vue-cli3配置文件
+ * @ Modified time: 2021-01-19 16:55:49
+ * @ Description: vue-cli3 配置文件
  */
 
 const path = require('path')
