@@ -1,5 +1,8 @@
 ## 说明
 
+诺博Vue项目模板，适用于小型项目，即业务单纯的项目， 如AGV，高低值耗材类，智慧病区和PDA类项目
+药品线请使用其他模板
+
 ### Compiles and hot-reloads for development
 
 ## Project setup
