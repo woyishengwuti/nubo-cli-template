@@ -1,0 +1,21 @@
+/**
+ * @ Author: feixiang.wu
+ * @ Create Time: 2020-01-08 16:30:10
+ * @ Modified by: feixiang.wu
+ * @ Modified time: 2020-10-26 09:14:29
+ * @ Description: 以1920px作为基准值 设置html的font-size 以便于rem生效  1920px => 100vw; 16px => calc(16vw / 19.2)
+ * @ Description: 
+ */
+
+html {
+  font-size: calc(100vw / 19.2);
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  html {
+    font-size: calc(100vw / 19.2);
+  }
+}
+
+
+

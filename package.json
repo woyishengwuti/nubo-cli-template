@@ -1,13 +1,16 @@
 {
   "name": "nb_cloud_platform",
-  "version": "4.0.1",
+  "version": "4.0.0",
+  "modules_version": "4.0.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "dev:m": "vue-cli-service serve --mode modules",
+    "build:m": "cross-env VUE_APP_NAME=modules vue-cli-service build",
+    "dev:m2": "vue-cli-service serve --mode modules2",
+    "build:m2": "cross-env VUE_APP_NAME=modules2 vue-cli-service build",
     "lint": "eslint --fix --ext .js,.vue src",
-    "dev": "vue-cli-service serve",
     "dll": "webpack -p --progress --config ./webpack.dll.conf.js",
+    "test:unit": "vue-cli-service test:unit",
     "test:cov": "vue-cli-service test:unit --coverage"
   },
   "dependencies": {
@@ -15,6 +18,9 @@
     "core-js": "^3.6.2",
     "echarts": "^4.8.0",
     "element-ui": "^2.13.0",
+    "file-saver": "^2.0.0",
+    "js-cookie": "^2.2.1",
+    "loadjs": "^4.2.0",
     "moment": "^2.24.0",
     "vant": "^2.10.2",
     "vue": "^2.6.11",
@@ -28,14 +34,14 @@
     "@babel/register": "^7.7.7",
     "@vue/cli-plugin-babel": "^4.1.2",
     "@vue/cli-plugin-eslint": "^4.1.2",
-    "@vue/cli-plugin-unit-jest": "^4.5.9",
     "@vue/cli-service": "^4.3.1",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "8.0.1",
     "babel-polyfill": "^6.26.0",
     "compression-webpack-plugin": "^3.0.1",
-    "eslint": "^7.12.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.8.0",
     "eslint-plugin-vue": "6.1.2",
     "inquirer": "^7.0.1",
     "mockjs": "1.1.0",
@@ -56,9 +62,5 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ],
-  "agv_version": "1.0.0",
-  "ireve_version": "1.0.0",
-  "modules_version": "4.0.0",
-  "robot_version": "1.0.0"
+  ]
 }

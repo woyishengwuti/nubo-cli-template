@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="248px" height="248px" viewBox="0 0 248 248" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>img_消毒</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="25.9716324%" y1="90.4193186%" x2="25.9716324%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#5474E5" stop-opacity="0" offset="43.3752111%"></stop>
+            <stop stop-color="#5474E5" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="123" cy="123" r="113"></circle>
+        <filter x="-4.9%" y="-4.9%" width="109.7%" height="109.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="10" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.329411765   0 0 0 0 0.454901961   0 0 0 0 0.898039216  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="25.9716324%" y1="79.6204531%" x2="25.9716324%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#5474E5" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#5474E5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="联系帮助+缺省页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="消毒设置_正在消毒" transform="translate(-836.000000, -293.000000)">
+            <g id="img_消毒" transform="translate(837.000000, 294.000000)">
+                <circle id="椭圆形备份-2" fill="url(#linearGradient-1)" opacity="0.12" cx="123" cy="123" r="113"></circle>
+                <g id="椭圆形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use stroke="#5474E5" stroke-width="2" xlink:href="#path-2"></use>
+                </g>
+                <circle id="椭圆形备份-3" stroke="#5474E5" opacity="0.2" cx="123" cy="123" r="123"></circle>
+                <g id="编组-3" transform="translate(37.000000, 90.000000)">
+                    <path d="M109,1 L109,20 C109,32.7025492 98.7025492,43 86,43 C73.2974508,43 63,32.7025492 63,20 L63,1" id="路径" stroke="#5474E5" stroke-width="2" stroke-linejoin="round"></path>
+                    <path d="M109,1 L109,20 C109,32.7025492 98.7025492,43 86,43 C73.2974508,43 63,32.7025492 63,20 L63,1" id="路径备份" fill="url(#linearGradient-4)" opacity="0.2"></path>
+                    <path d="M151,78 C151.552285,78 152,78.4477153 152,79 C152,79.5522847 151.552285,80 151,80 L137,80 C136.447715,80 136,79.5522847 136,79 C136,78.4477153 136.447715,78 137,78 L151,78 Z M35,78 C35.5522847,78 36,78.4477153 36,79 C36,79.5522847 35.5522847,80 35,80 L21,80 C20.4477153,80 20,79.5522847 20,79 C20,78.4477153 20.4477153,78 21,78 L35,78 Z M36.7644753,36.4379791 C36.7658762,36.4393723 36.7672728,36.4407697 36.7686651,36.4421714 L46.5554899,46.295228 C46.9349831,46.6772894 46.9347927,47.2940724 46.5550636,47.6758994 C46.1783282,48.0547161 45.5658322,48.0564033 45.1870155,47.6796679 C45.1856146,47.6782748 45.184218,47.6768773 45.1828258,47.6754756 L35.3960009,37.8224191 C35.0165077,37.4403577 35.0166982,36.8235746 35.3964272,36.4417477 C35.7731626,36.062931 36.3856586,36.0612437 36.7644753,36.4379791 Z M133.372945,35.555205 C133.374347,35.5565973 133.375744,35.5579939 133.377137,35.5593948 C133.756866,35.9412217 133.757057,36.5580047 133.377564,36.9400661 L123.590739,46.7931227 C123.214237,47.172172 122.601743,47.1742375 122.222693,46.7977361 L122.218501,46.7935464 C121.838772,46.4117195 121.838581,45.7949364 122.218075,45.4128751 L132.004899,35.5598185 C132.381401,35.1807692 132.993896,35.1787037 133.372945,35.555205 Z M86,20 C86.5522847,20 87,20.4477153 87,21 L87,35 C87,35.5522847 86.5522847,36 86,36 C85.4477153,36 85,35.5522847 85,35 L85,21 C85,20.4477153 85.4477153,20 86,20 Z" id="形状结合" fill="#5474E5" transform="translate(86.000000, 50.000000) scale(1, -1) translate(-86.000000, -50.000000) "></path>
+                    <path d="M37,0 L135,0 C135.552285,-1.01453063e-16 136,0.44771525 136,1 C136,1.55228475 135.552285,2 135,2 L37,2 C36.4477153,2 36,1.55228475 36,1 C36,0.44771525 36.4477153,1.01453063e-16 37,0 Z" id="矩形备份-2" fill="#5474E5"></path>
+                    <path d="M83.3074714,5 C83.3074714,8.22387358 83.0737971,13.8637282 83.3074714,18.3376336 C83.5434622,22.8558881 83.2342941,28.136325 79.3059307,27.2989353 C74.0191282,26.171974 74.2004351,20.5028437 86,20.5028437 C97.7995649,20.5028437 96.9112804,27.2989353 93.1982829,27.2989353 C87.7638708,27.2989353 88.3512657,23.4467462 88.3079025,18.9116112 C88.2856694,16.5863633 88.2856694,11.9491595 88.3079025,5" id="路径-19" stroke="#5474E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,16 +1,8 @@
-/**
- * @ Author: feixiang.wu
- * @ Create Time: 2020-12-17 09:35:02
- * @ Modified by: feixiang.wu
- * @ Modified time: 2020-12-18 14:17:47
- * @ Description: DLL化
- */
-
 const path = require('path')
 const webpack = require('webpack')
-// function resolve(dir) {
-//   return path.join(__dirname, '..', dir)
-// }
+function resolve(dir) {
+  return path.join(__dirname, '..', dir)
+}
 const staticPath = path.resolve(process.cwd(), 'public')
 
 module.exports = {

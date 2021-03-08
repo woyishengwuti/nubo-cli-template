@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480px" height="106px" viewBox="0 0 480 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>img/工卡绑定</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="10.7310524%" y1="27.1731191%" x2="81.6744172%" y2="72.8268809%" id="linearGradient-1">
+            <stop stop-color="#E9ECED" offset="0%"></stop>
+            <stop stop-color="#D8DBE9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="个人中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人中心-工卡登录" transform="translate(-870.000000, -266.000000)">
+            <g id="content" transform="translate(300.000000, 80.000000)">
+                <g id="img/工卡绑定" transform="translate(570.000000, 186.000000)">
+                    <g>
+                        <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="3" width="148" height="100"></rect>
+                        <rect id="矩形" fill="#C3C6D5" x="14" y="19" width="48" height="21"></rect>
+                        <rect id="矩形备份" fill="#C3C6D5" x="14" y="78" width="120" height="9"></rect>
+                        <path d="M245.5,36 C245.924245,36 246.337501,36.1349059 246.680033,36.3852178 L267.290298,51.4465651 C268.182118,52.0982794 268.376761,53.3495609 267.725047,54.2413805 C267.603405,54.4078385 267.456756,54.5544873 267.290298,54.6761296 L246.680033,69.737477 C245.788214,70.3891913 244.536932,70.1945475 243.885218,69.3027279 C243.634906,68.9601959 243.5,68.5469402 243.5,68.1226947 L243.499,58.061 L213,58.0613474 C211.895431,58.0613474 211,57.1659169 211,56.0613474 L211,50.0613474 C211,48.9567779 211.895431,48.0613474 213,48.0613474 L243.5,48.061 L243.5,38 C243.5,36.8954305 244.395431,36 245.5,36 Z" id="形状结合" fill="#5474E5"></path>
+                        <path d="M334,83 L334,102 L355,102 L355,106 L330,106 L330,83 L334,83 Z M480,83 L480,106 L455,106 L455,102 L476,102 L476,83 L480,83 Z M480,0 L480,23 L476,23 L476,4 L455,4 L455,0 L480,0 Z M355,0 L355,4 L334,4 L334,23 L330,23 L330,0 L355,0 Z" id="形状" fill="#5474E5" opacity="0.8"></path>
+                        <rect id="矩形备份-4" fill="#5474E5" opacity="0.06" x="330" y="0" width="150" height="106"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

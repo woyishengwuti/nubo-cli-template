@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>BFB9C6BD-A917-45A4-8BAD-1C9E91329DDB</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="标题栏-主页" transform="translate(-1729.000000, -32.000000)">
+            <g id="icon\下拉">
+                <g transform="translate(1724.000000, 24.000000)">
+                    <rect id="矩形" x="0" y="0" width="32" height="32"></rect>
+                    <path d="M5.49041887,11.722895 L14.16743,22.9519682 C14.8428163,23.8259975 16.0988657,23.9870295 16.972895,23.3116432 C17.1076061,23.2075483 17.2284751,23.0866793 17.33257,22.9519682 L26.0095811,11.722895 C26.6849674,10.8488657 26.5239354,9.59281626 25.6499061,8.91743 C25.2996909,8.64680916 24.8696016,8.5 24.4270111,8.5 L7.07298887,8.5 C5.96841937,8.5 5.07298887,9.3954305 5.07298887,10.5 C5.07298887,10.9425905 5.21979803,11.3726798 5.49041887,11.722895 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

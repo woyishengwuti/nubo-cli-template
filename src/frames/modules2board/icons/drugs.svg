@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="47px" viewBox="0 0 44 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>2D17FD7A-7D99-4267-AE42-341ADEF3E145</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="菜单/其他管理-药品" transform="translate(-17.000000, -16.000000)">
+            <g id="其他管理-药品">
+                <g id="主icon/药品管理" transform="translate(12.000000, 12.000000)">
+                    <g id="Icon/药品管理" transform="translate(7.000000, 6.000000)">
+                        <path d="M17.7413685,38 L3.63636364,38 C1.62805546,38 0,36.298682 0,34.2 L0,3.8 C0,1.70131795 1.62805546,0 3.63636364,0 L26.3636364,0 C28.3719445,0 30,1.70131795 30,3.8 L30,9.74358974" id="路径" stroke="#F4B263" stroke-width="3" stroke-linecap="round"></path>
+                        <rect id="矩形" stroke="#F4B263" stroke-width="3" x="21.5" y="14.5" width="19" height="29" rx="4"></rect>
+                        <rect id="矩形备份-11" fill="#F4B263" x="25" y="27" width="12" height="3" rx="1.5"></rect>
+                        <rect id="矩形备份-11" fill="#F4B263" transform="translate(31.000000, 28.500000) rotate(90.000000) translate(-31.000000, -28.500000) " x="25" y="27" width="12" height="3" rx="1.5"></rect>
+                        <rect id="矩形" fill="#F4B263" x="22" y="9" width="17" height="3" rx="1.5"></rect>
+                        <rect id="矩形" fill="#F4B263" x="4" y="9" width="13" height="3" rx="1.5"></rect>
+                        <rect id="矩形备份-12" fill="#F4B263" x="4" y="17" width="13" height="3" rx="1.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

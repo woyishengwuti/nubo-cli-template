@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="36px" viewBox="0 0 48 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>61250DDF-5884-4EFA-8480-9F564535B038</title>
+    <desc>Created with Sketch.</desc>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="按单入库-未入库" transform="translate(-30.000000, -197.000000)">
+            <g id="挂起" transform="translate(30.000000, 197.000000)">
+                <path d="M0,0 L48,0 L48,33.1312941 C48,34.2358636 47.1045695,35.1312941 46,35.1312941 C45.763962,35.1312941 45.5297874,35.0895112 45.3083147,35.0078791 L25.5,27.7067871 L25.5,27.7067871 L2.61855753,35.1483822 C1.5681435,35.490002 0.439677043,34.9154109 0.0980571547,33.8649968 C0.033091339,33.6652397 1.80208126e-15,33.4564952 0,33.2464393 L0,0 L0,0 Z" id="矩形" fill="#F4B263"></path>
+                <text font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="6" y="20">挂起</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

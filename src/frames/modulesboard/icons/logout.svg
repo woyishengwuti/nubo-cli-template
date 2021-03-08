@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icon/退出备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.9035971,32 C15.6455635,32 17,30.6877323 17,29 L11,29 C11,30.6877323 12.1606715,32 13.9035971,32 L13.9035971,32 Z M24.6818165,22.0683821 L24.6818165,13.8490189 C24.6818165,8.91638255 20.9483461,4.60096226 16.3853299,3.57328724 L16.3853299,2.54561222 C16.3853299,1.313217 15.7634274,0.284523468 14.5185947,0.0798032701 C12.8595029,-0.331674142 11.6146701,0.901739586 11.6146701,2.54561222 L11.6146701,3.57328724 C6.84503836,4.60096226 3.31921142,8.91638255 3.31921142,13.8480004 L3.31921142,22.0683821 L0,25.3561274 L0,27 L28,27 L28,25.3561274 L24.6818165,22.0683821 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/退出备份-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="消息中心" transform="translate(9.000000, 7.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="形状" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="icon/颜色/白" mask="url(#mask-2)" fill="#FFFFFF">
+                <g transform="translate(-8.928098, -7.000000)" id="矩形">
+                    <rect x="0" y="0" width="46" height="46"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

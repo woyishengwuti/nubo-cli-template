@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1081px" viewBox="0 0 1920 1081" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>登录Box</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-8.5%" y="-15.8%" width="117.0%" height="131.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="40" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="登录" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录-人脸识别按钮" transform="translate(0.000000, 1.000000)">
+            <g id="img/登录-阴影">
+                <g id="编组-2">
+                    <rect id="矩形" x="0" y="0" width="1920" height="1080"></rect>
+                    <g id="img/登录Box" fill="#042454" opacity="0.828218006">
+                        <rect id="阴影" filter="url(#filter-1)" x="254" y="190" width="1412" height="760" rx="18"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

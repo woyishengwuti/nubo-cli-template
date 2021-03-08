@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="39px" viewBox="0 0 52 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>del备份</title>
+    <desc>Created with Sketch.</desc>
+    <g id="登录" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="键盘" transform="translate(-1742.000000, -614.000000)">
+            <g id="键盘/按键备份-45" transform="translate(1730.000000, 592.000000)">
+                <g id="del备份" transform="translate(16.000000, 26.000000)">
+                    <path d="M38.0819611,3.80491258 L39,4.26393202 L39,39.5 L5,39.5 L5,4.67157287 L5.58678644,4.08478644 L5.7516226,3.93725222 L22.0000417,-9.06126636 L38.0819611,3.80491258 Z" id="形状结合" stroke="#FFFFFF" stroke-width="4" fill="#FFFFFF" stroke-linejoin="round" transform="translate(22.000000, 15.500000) rotate(-90.000000) translate(-22.000000, -15.500000) "></path>
+                    <rect id="矩形" fill="#5474E5" transform="translate(26.899495, 15.899495) rotate(-45.000000) translate(-26.899495, -15.899495) " x="24.8994949" y="3.89949494" width="4" height="24" rx="2"></rect>
+                    <rect id="矩形备份" fill="#5474E5" transform="translate(26.899495, 15.899495) rotate(45.000000) translate(-26.899495, -15.899495) " x="24.8994949" y="3.89949494" width="4" height="24" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>icon/Down-big</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M25.0086651,31.2750285 L35.5447666,18.3044817 C36.2391218,17.4496905 36.1265446,16.1792909 35.2933183,15.4669649 C34.9403807,15.1652382 34.4954987,15 34.0360769,15 L12.9638739,15 C11.8792563,15 11,15.9020125 11,17.0147014 C11,17.4860136 11.1610695,17.9424097 11.4551842,18.3044817 L21.9912857,31.2750285 C22.6856409,32.1298197 23.9239905,32.2453106 24.7572168,31.5329846 C24.8484644,31.4549769 24.9326254,31.3686377 25.0086651,31.2750285 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/Down-big" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="三角形" fill="#C3C6D5" xlink:href="#path-1"></use>
+        <g id="icon/颜色/灰" mask="url(#mask-2)" fill="#C3C6D5">
+            <rect id="矩形" x="0" y="0" width="46" height="46"></rect>
+        </g>
+    </g>
+</svg>

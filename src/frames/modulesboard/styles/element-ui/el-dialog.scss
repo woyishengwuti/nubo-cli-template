@@ -1,0 +1,322 @@
+/**
+ * @ Author: feixiang.wu
+ * @ Create Time: 2020-06-17 11:03:18
+ * @ Modified by: feixiang.wu
+ * @ Modified time: 2020-11-26 16:29:39
+ * @ Description: 弹出层
+ */
+
+.el-dialog__wrapper {
+	.el-dialog {
+		.el-dialog__header {
+			.title-wrapper {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+
+				.title {
+					font-size: 28px;
+					color: $logo-text-color;
+				}
+
+				.tips {
+					margin-left: 12px;
+				}
+			}
+		}
+	}
+}
+
+// 弹出层
+.custom-dialog-mini {
+	.el-dialog {
+		height: 480px;
+		border-radius: 16px;
+		background: $back-color;
+		overflow: hidden;
+
+		.el-dialog__header {
+			text-align: center;
+			color: $title-color;
+			padding: 34px 0px;
+	
+			.el-dialog__title {
+				font-size: 32px;
+			}
+	
+			.el-dialog__headerbtn {
+				font-size: 46px;
+	
+				.el-dialog__close {
+					color: #000000;
+					opacity: 0.25;
+				}
+			}
+		}
+	
+		.el-dialog__body {
+			padding: 0;
+		}
+	
+		.footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			z-index: 99;
+	
+			> div {
+				width: 50%;
+				height: 100px;
+				line-height: 100px;
+				font-size: 36px;
+				border: none;
+				display: flex;
+				justify-content: center;
+				border-radius: 0;
+				cursor: pointer;
+			}
+	
+			div.cancel {
+				border: 1px solid $border-color;
+				color: $primary-color;
+				background: $back-color;
+			}
+	
+			div.confirm {
+				color: $text-color;
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+// 弹出层 - default
+.custom-dialog-default {
+	.el-dialog {
+		width: 1480px;
+		height: 860px;
+		background: $back-color;
+		border-radius: 16px;
+		overflow: hidden;
+		
+		.el-dialog__header {
+			text-align: left;
+			color: $title-color;
+			padding: 34px 30px;
+	
+			.el-dialog__title {
+				font-size: 28px;
+				color: $logo-text-color;
+			}
+
+			.title {
+				font-size: 28px;
+				color: $logo-text-color;
+
+				// span.num {}
+			}
+	
+			.el-dialog__headerbtn {
+				font-size: 46px;
+	
+				.el-dialog__close {
+					color: #000000;
+					opacity: 0.25;
+				}
+			}
+		}
+
+		.el-dialog__body {
+			padding: 0;
+		}
+
+		.footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			z-index: 99;
+
+			> div {
+				height: 100px;
+				line-height: 100px;
+				font-size: 36px;
+				border: none;
+				display: flex;
+				justify-content: center;
+				border-radius: 0;
+				cursor: pointer;
+			}
+
+			div.cancel {
+				width: 50%;
+				border: 1px solid $border-color;
+				color: $primary-color;
+				background: $back-color;
+			}
+			
+			// 检测
+			div.detection {
+				width: 960px;
+				border: 1px solid $border-color;
+				color: $primary-color;
+				background: $back-color;
+				padding-left: 30px;
+				display: flex;
+				justify-content: flex-start;
+
+				span.detection {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					
+					.svg-icon {
+						width: 31px;
+						height: 31px;
+					}
+
+					> span {
+						color: $primary-color;
+						font-size: 16px;
+						font-family: $font-family;
+					}
+				}
+			}
+
+			div.confirm {
+				width: 520px;
+				color: $text-color;
+				background: $primary-color;
+			}
+
+			div.disabled {
+				background: $border-color;
+				color: $text-color;
+				font-family: $font-family;
+				font-size: 36px;
+				pointer-events: none;
+			}
+		}
+	}
+}
+
+// 弹出层 - middle
+.custom-dialog-middle {
+	.el-dialog {
+		width: 1000px;
+		height: 650px;
+		background: $back-color;
+		border-radius: 16px;
+		overflow: hidden;
+		
+		.el-dialog__header {
+			text-align: left;
+			color: $title-color;
+			padding: 34px 30px;
+	
+			.el-dialog__title {
+				font-size: 28px;
+				color: $logo-text-color;
+			}
+
+			.title {
+				font-size: 28px;
+				color: $logo-text-color;
+
+				// span.num {}
+			}
+	
+			.el-dialog__headerbtn {
+				font-size: 46px;
+	
+				.el-dialog__close {
+					color: #000000;
+					opacity: 0.25;
+				}
+			}
+		}
+
+		.el-dialog__body {
+			padding: 0;
+		}
+
+		.footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+
+			> div {
+				width: 50%;
+				height: 100px;
+				line-height: 100px;
+				font-size: 36px;
+				border: none;
+				display: flex;
+				justify-content: center;
+				border-radius: 0;
+				cursor: pointer;
+			}
+
+			div.cancel {
+				border: 1px solid $border-color;
+				color: $primary-color;
+				background: $back-color;
+			}
+
+			div.confirm {
+				color: $text-color;
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+// 不需要标题关闭按钮
+.el-dialog__headerbtn-hidden {
+	.el-dialog__header {
+		padding: 27px 30px!important;
+
+		.title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			> div {
+				.cell {
+					color: $logo-text-color;
+					font-size: 28px;
+					font-family: $font-family;
+				}
+
+				.cell-num {
+					color: $logo-text-color;
+					font-size: 28px;
+					font-family: $bold-font-family;
+					margin-left: 6px;
+				}
+			}
+			
+			.right-icon {
+				display: flex;
+				
+				.svg-icon {
+					width: 46px;
+					height: 46px;
+				}
+			}
+		}
+
+		.el-dialog__headerbtn {
+			display: none;
+		}
+		
+	}
+}

@@ -2,20 +2,19 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-04-02 09:49:51
  * @ Modified by: feixiang.wu
- * @ Modified time: 2021-01-19 16:55:49
- * @ Description: vue-cli3 配置文件
+ * @ Modified time: 2021-03-08 14:12:07
+ * @ Description: vue-cli3配置文件
  */
 
 const path = require('path')
 
-// gzip 压缩
-const CompressionWebpackPlugin = require('compression-webpack-plugin')
-const productionGzipExtensions = /\.(js|css|json|txt|html|ico|svg)(\?.*)?$/i
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
+
+console.error('process.env.NODE_ENV', process.env.NODE_ENV, process.env.VUE_APP_NAME)
 
 const staticPath = process.env.NODE_ENV === 'production' ? {
   css: ['./plugins/element-ui-2.13.0/index.css'],
@@ -34,7 +33,6 @@ const staticPath = process.env.NODE_ENV === 'production' ? {
 }
 
 module.exports = {
-  // 是否使用包含运行时编译器的 Vue 构建版本。true 可以在 Vue 组件中使用 template 选项了，但会让应用额外增加 10kb 左右。
   runtimeCompiler: true,
   publicPath: process.env.NODE_ENV === 'development' ? '/' : './',
   outputDir: 'dist',
@@ -43,7 +41,7 @@ module.exports = {
   productionSourceMap: false,
   pages: {
     index: {
-      entry: `src/main.js`,
+      entry: `src/core/main.js`,
       template: `public/index.html`,
       filename: `index.html`,
       chunks: ['chunk-vendors', 'chunk-common', 'index'],
@@ -52,21 +50,13 @@ module.exports = {
   },
   configureWebpack: {
     plugins: [
-      new CompressionWebpackPlugin({
-        filename: '[path].gz[query]',
-        algorithm: 'gzip',
-        test: productionGzipExtensions, // 匹配文件名
-        threshold: 10240, // 对10K以上的数据进行压缩
-        minRatio: 0.8,
-        deleteOriginalAssets: false // 是否删除源文件
-      }),
       // new webpack.DllReferencePlugin({
       //   context: process.cwd(),
       //   manifest: require('./public/dll/vendor-manifest.json')
       // })
-      new BundleAnalyzerPlugin({
-        analyzerPort: 10000 // 运行后的端口号
-      })
+      // process.env.NODE_ENV === 'production' ? new BundleAnalyzerPlugin({
+      //   analyzerPort: 10000 // 运行后的端口号
+      // }) : ''
     ]
   },
   chainWebpack: config => {
@@ -80,22 +70,30 @@ module.exports = {
         'moment': 'moment',
         'echarts': 'echarts'
       }
+
       config.externals(externals)
     }
 
     config.resolve.alias
       .set('@', resolve('src'))
-      .set('@modules', resolve('src/modules'))
+      .set('@core', resolve('src/core'))
+      .set('@modulesboard', resolve('src/frames/modulesboard'))
+      .set('@modules2board', resolve('src/frames/modules2board'))
 
     // set svg-sprite-loader
+    // 下面不能使用别名加载
     config.module
       .rule('svg')
-      .exclude.add(resolve('src/svg'))
+      .exclude.add(resolve('src/core/icons/svg'))
+      .add(resolve('src/frames/modulesboard/icons'))
+      .add(resolve('src/frames/modules2board/icons'))
       .end()
     config.module
       .rule('icons')
       .test(/\.svg$/)
-      .include.add(resolve('src/core/svg'))
+      .include.add(resolve('src/core/icons/svg'))
+      .add(resolve('src/frames/modulesboard/icons'))
+      .add(resolve('src/frames/modules2board/icons'))
       .end()
       .use('svg-sprite-loader')
       .loader('svg-sprite-loader')
@@ -103,12 +101,16 @@ module.exports = {
         symbolId: 'icon-[name]'
       })
       .end()
+
+    // 解决 cli3 热更新失效 https://github.com/vuejs/vue-cli/issues/1559
+    // config.resolve.symlinks(true)
+    // config.entry('index').add('babel-polyfill')
   },
   devServer: {
     host: '0.0.0.0',
     proxy: {
       '/api': {
-        target: 'http://api.com:8081',
+        target: process.env.VUE_APP_API,
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
@@ -125,14 +127,15 @@ module.exports = {
       postcss: {
         plugins: [
           require('postcss-plugin-px2rem')({
-            rootValue: 16,
+            rootValue: 100,
             exclude: /(node_modules)/i,
             minPixelValue: 2
           })
         ]
       },
       sass: {
-        prependData: `@import "src/styles/var.scss";@import "src/styles/mixin.scss";`
+        // 全局变量
+        prependData: process.env.VUE_APP_PRE
       }
     }
   }

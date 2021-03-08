@@ -1,0 +1,122 @@
+/**
+ * @ Author: feixiang.wu
+ * @ Create Time: 2020-06-17 10:54:57
+ * @ Modified by: feixiang.wu
+ * @ Modified time: 2020-11-26 09:37:43
+ * @ Description: 弹出提示
+ */
+
+// loading
+.el-loading-default {
+	.el-loading-spinner {
+		width: 346px;
+		height: 372px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: $loading-bg-color;
+		border-radius: 18px;
+
+		.el-icon-loading {
+			// width: 40px;
+			// height: 40px;
+			animation: none;
+			margin-top: 95px;
+
+			&::before {
+				content: '';
+				display: block;
+				width: 155px;
+				height: 100px;
+				background: url('~@modules2board/assets/images/loading.gif') no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
+		}
+
+		.el-loading-text {
+			font-size: 32px;
+			color: $title-color;
+			margin-top: 60px;
+		}
+
+		i {
+			font-size: 32px;
+		}
+	}
+}
+
+.el-loading-spinner i {
+	font-size: 32px;
+}
+
+// message
+.el-message {
+	font-size: 38px;
+	top: 40%;
+	padding: 33px 63px 33px 60px;
+	z-index: 20200528!important;
+	font-family: $sub-font-family;
+
+	.el-message__icon {
+		margin-right: 0;
+	}
+
+	.el-message__content {
+		font-size: 38px!important;
+	}
+}
+
+.el-message__closeBtn {
+	display: none;
+}
+
+// 	message--success
+.el-message--success {
+	background: $correct-bg-color;
+	border: 2px solid $correct-text-color;
+	border-radius: 8px;
+	color: $title-color;
+}
+
+.el-message--warning,
+.el-message--error {
+	background: $waring-bg-color;
+	border: 2px solid $waring-text-color;
+	border-radius: 8px;
+	color: $title-color;
+}
+
+.el-message__content,
+.el-message--success .el-message__content,
+.el-message--warning .el-message__content,
+.el-message--error .el-message__content {
+	font-size: 38px!important;
+	color: #383838;
+	font-family: $sub-font-family;
+	padding-left: 20px;
+	max-width: 480px;
+	line-height: 1.2;
+}
+
+.el-message .el-icon-success:before,
+.el-message .el-icon-warning:before,
+.el-message .el-icon-error:before {
+	content: '';
+}
+
+.el-message .el-icon-success {
+	width: 52px;
+	height: 52px;
+	background: transparent url(~@modules2board/assets/images/success@2x.png) no-repeat 0 0;
+	background-size: 52px 52px;
+}
+
+.el-message .el-icon-warning,
+.el-message .el-icon-error {
+	width: 52px;
+	height: 52px;
+	background: transparent url(~@modules2board/assets/images/error@2x.png) no-repeat 0 0;
+	background-size: 52px 52px;
+}
