@@ -12,12 +12,19 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run dev
+npm run dev:m
+npm run dev:m2
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+<!-- 无webpack-bundle-analyzer -->
+npm run build:m
+npm run build:m2
+
+<!-- webpack-bundle-analyzer -->
+npm run build:m:b
+npm run build:m2:b
 ```
 
 ### Run your tests
