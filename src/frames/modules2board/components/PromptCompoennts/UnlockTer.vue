@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-07-09 15:29:06
  * @ Modified by: feixiang.wu
- * @ Modified time: 2020-07-14 11:30:08
+ * @ Modified time: 2021-03-12 13:30:02
  * @ Description: 门锁提示
  -->
 
@@ -26,7 +26,7 @@
         >
           <template>
             <span class="img">
-              <img :src="require('@modules2board/assets/images/terminal.png')" alt="logo">
+              <!-- <img :src="require('@modules2board/assets/images/terminal.png')" alt="logo"> -->
             </span>
           </template>
           <span class="ter-name" :title="item.sTerDesc" v-text="item.sTerDesc" />

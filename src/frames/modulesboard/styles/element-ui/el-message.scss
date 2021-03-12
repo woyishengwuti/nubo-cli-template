@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-06-17 10:54:57
  * @ Modified by: feixiang.wu
- * @ Modified time: 2020-11-26 09:37:43
+ * @ Modified time: 2021-03-12 13:32:11
  * @ Description: 弹出提示
  */
 
@@ -29,7 +29,7 @@
 				display: block;
 				width: 155px;
 				height: 100px;
-				background: url('~@modulesboard/assets/images/loading.gif') no-repeat;
+				// background: url('~@modulesboard/assets/images/loading.gif') no-repeat;
 				background-size: cover;
 				background-position: center center;
 			}
@@ -109,7 +109,7 @@
 .el-message .el-icon-success {
 	width: 52px;
 	height: 52px;
-	background: transparent url(~@modulesboard/assets/images/success@2x.png) no-repeat 0 0;
+	// background: transparent url(~@modulesboard/assets/images/success@2x.png) no-repeat 0 0;
 	background-size: 52px 52px;
 }
 
@@ -117,6 +117,6 @@
 .el-message .el-icon-error {
 	width: 52px;
 	height: 52px;
-	background: transparent url(~@modulesboard/assets/images/error@2x.png) no-repeat 0 0;
+	// background: transparent url(~@modulesboard/assets/images/error@2x.png) no-repeat 0 0;
 	background-size: 52px 52px;
 }

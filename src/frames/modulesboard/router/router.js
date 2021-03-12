@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-03-03 16:38:14
  * @ Modified by: feixiang.wu
- * @ Modified time: 2020-09-19 11:30:41
+ * @ Modified time: 2021-03-12 13:48:39
  * @ Description: 登录页主页欢迎页404路由
  */
 
@@ -13,11 +13,11 @@ export default [
   },
   {
     path: '/login',
-    component: resolve => require(['@modulesboard/views/login/Login'], resolve)
+    component: resolve => import(/* webpackChunkName:"login" */'@modulesboard/views/login/Login')
   },
   {
     path: '/main',
-    component: resolve => require(['@modulesboard/views/Layout/index'], resolve),
+    component: resolve => import(/* webpackChunkName:"Layout" */'@modulesboard/views/Layout/index'),
     children: [
       {
         path: '/',
@@ -25,12 +25,12 @@ export default [
       },
       {
         path: '/menu',
-        component: resolve => require(['@modulesboard/views/Menu/Menu'], resolve)
+        component: resolve => import(/* webpackChunkName:"Menu" */'@modulesboard/views/Menu/Menu')
       }
     ]
   },
   {
     path: '*',
-    component: resolve => require(['@modulesboard/views/Layout/index'], resolve)
+    component: resolve => import(/* webpackChunkName:"Layout" */'@modulesboard/views/Layout/index')
   }
 ]

@@ -2,19 +2,17 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-04-02 09:49:51
  * @ Modified by: feixiang.wu
- * @ Modified time: 2021-03-08 14:12:07
+ * @ Modified time: 2021-03-12 13:55:13
  * @ Description: vue-cli3配置文件
  */
 
 const path = require('path')
 
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
-
-console.error('process.env.NODE_ENV', process.env.NODE_ENV, process.env.VUE_APP_NAME)
 
 const staticPath = process.env.NODE_ENV === 'production' ? {
   css: ['./plugins/element-ui-2.13.0/index.css'],
@@ -35,7 +33,7 @@ const staticPath = process.env.NODE_ENV === 'production' ? {
 module.exports = {
   runtimeCompiler: true,
   publicPath: process.env.NODE_ENV === 'development' ? '/' : './',
-  outputDir: 'dist',
+  outputDir: 'dist-' + process.env.VUE_APP_NAME,
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
@@ -50,13 +48,11 @@ module.exports = {
   },
   configureWebpack: {
     plugins: [
+      process.env.BundleAnalyzerPlugin ? new BundleAnalyzerPlugin() : () => {}
       // new webpack.DllReferencePlugin({
       //   context: process.cwd(),
       //   manifest: require('./public/dll/vendor-manifest.json')
       // })
-      // process.env.NODE_ENV === 'production' ? new BundleAnalyzerPlugin({
-      //   analyzerPort: 10000 // 运行后的端口号
-      // }) : ''
     ]
   },
   chainWebpack: config => {
@@ -135,7 +131,7 @@ module.exports = {
       },
       sass: {
         // 全局变量
-        prependData: process.env.VUE_APP_PRE
+        prependData: '@import "src/frames/modulesboard/styles/var.scss"; @import "src/frames/modulesboard/styles/mixin.scss";'
       }
     }
   }

@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-04-02 13:37:11
  * @ Modified by: feixiang.wu
- * @ Modified time: 2021-03-08 14:47:51
+ * @ Modified time: 2021-03-12 13:31:37
  * @ Description: 导航栏
  -->
 
@@ -18,7 +18,7 @@
 import { resetRouter } from '@core/router/router'
 import { getMenus } from '@core/api/frame'
 // import api from '@modulesboard/api/api'
-import _import from '@core/scripts/_import'
+import _import from '@modulesboard/scripts/_import'
 // import Bus from '@modulesboard/event/bus'
 
 export default {

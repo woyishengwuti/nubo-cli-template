@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-05-26 13:42:25
  * @ Modified by: feixiang.wu
- * @ Modified time: 2020-09-29 10:20:03
+ * @ Modified time: 2021-03-12 13:30:19
  * @ Description: 终端列表 抽屉柜: TerType_001 | 单元柜: TerType_002 | 保险柜:TerType_003 | 冷藏阴凉柜: TerType_004 |
    @ Description: RFID柜: TerType_005 | 标准框柜: TerType_006
  -->
@@ -24,13 +24,13 @@
             @click.stop="applayerandLayout(val, index)"
           >
             <span class="img">
-              <img :src="require('@modules2board/assets/images/terminal.png')" alt="logo">
+              <!-- <img :src="require('@modules2board/assets/images/terminal.png')" alt="logo"> -->
             </span>
           </div>
         </template>
         <template v-else>
           <span class="img">
-            <img :src="require('@modules2board/assets/images/terminal.png')" alt="logo">
+            <!-- <img :src="require('@modules2board/assets/images/terminal.png')" alt="logo"> -->
           </span>
         </template>
         <span class="ter-name" :title="item.sTerDesc" v-text="item.sTerDesc" />

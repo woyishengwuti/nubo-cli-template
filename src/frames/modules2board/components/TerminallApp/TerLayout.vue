@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-04-26 15:42:55
  * @ Modified by: feixiang.wu
- * @ Modified time: 2020-09-29 15:10:44
+ * @ Modified time: 2021-03-12 13:30:14
  * @ Description: 终端层内部布局信息
  -->
 
@@ -54,10 +54,10 @@
                       </span>
                     </template>
                     <span v-if="Number(v.expireMonth) === 3">
-                      <img :src="'./staticImg/' + Number(v.expireMonth) + '.png'" class="icon" alt="">
+                      <!-- <img :src="'./staticImg/' + Number(v.expireMonth) + '.png'" class="icon" alt=""> -->
                     </span>
                     <span v-if="Number(v.expireMonth) === 6">
-                      <img :src="'./staticImg/' + Number(v.expireMonth) + '.png'" class="icon" alt="">
+                      <!-- <img :src="'./staticImg/' + Number(v.expireMonth) + '.png'" class="icon" alt=""> -->
                     </span>
                   </div>
                 </div>

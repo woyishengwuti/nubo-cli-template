@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="./plugins/stimulsoft/css/stimulsoft.designer.office2013.whiteblue.css" />
-    <link rel="stylesheet" type="text/css" href="./plugins/stimulsoft/css/stimulsoft.viewer.office2013.whiteblue.css" />
     <% for(var css of htmlWebpackPlugin.options.static.css) { %>
       <link href="<%=css%>" rel="preload" as="style">
       <link rel="stylesheet" href="<%=css%>" as="style">
@@ -23,10 +21,7 @@
     </noscript>
     <div id="app"></div>
     <!-- <script src="./dll/vendor.dll.js"></script> -->
-    <script src="global-params.js"></script>
     <script src="config.js"></script>
-    <script src="./plugins/stimulsoft/js/stimulsoft.reports.js"></script>
-    <script src="./plugins/stimulsoft/js/stimulsoft.viewer.js"></script>
     <!-- built files will be auto injected -->
   </body>
 </html>

@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-07-10 13:58:52
  * @ Modified by: feixiang.wu
- * @ Modified time: 2020-09-24 17:32:36
+ * @ Modified time: 2021-03-12 13:32:01
  * @ Description: 正在进行消毒 disinfecting
  -->
 
@@ -21,7 +21,7 @@
     <div class="wrapper">
       <div v-if="doing" class="doing">
         <div class="loading">
-          <img src="~@modules2board/assets/images/disinfecting.gif" alt="">
+          <!-- <img src="~@modules2board/assets/images/disinfecting.gif" alt=""> -->
           <!-- <svg-icon class-name="disinfecting" icon-class="disinfecting" />
           <svg-icon class-name="disinfecting-inner-ring" icon-class="disinfecting-inner-ring" />
           <svg-icon class-name="disinfecting-outer-ring" icon-class="disinfecting-outer-ring" /> -->
@@ -42,7 +42,7 @@
       </div>
       <div v-else class="finish">
         <div class="loading">
-          <img src="~@modules2board/assets/images/disinfecting.gif" alt="">
+          <!-- <img src="~@modules2board/assets/images/disinfecting.gif" alt=""> -->
           <svg-icon class-name="disinfecting-finish" icon-class="disinfecting-finish" />
         </div>
         <div class="tips">

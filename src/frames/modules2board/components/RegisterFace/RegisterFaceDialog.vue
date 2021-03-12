@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-09-28 16:10:06
  * @ Modified by: feixiang.wu
- * @ Modified time: 2020-09-28 17:12:15
+ * @ Modified time: 2021-03-12 13:30:09
  * @ Description: 人脸注册和人脸识别登录
  -->
 
@@ -32,7 +32,7 @@
       </template>
       <template v-if="istate === 2">
         <div class="camera-success">
-          <img :src="require('../../assets/images/registered.png')" alt="">
+          <!-- <img :src="require('../../assets/images/registered.png')" alt=""> -->
           <svg-icon icon-class="disinfecting-finish" />
         </div>
         <div class="success">
@@ -42,7 +42,7 @@
       </template>
       <template v-if="istate === 3">
         <div class="camera-failure">
-          <img :src="require('../../assets/images/registered.png')" alt="">
+          <!-- <img :src="require('../../assets/images/registered.png')" alt=""> -->
           <svg-icon icon-class="error" />
         </div>
         <div class="failure">
