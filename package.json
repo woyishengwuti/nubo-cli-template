@@ -1,19 +1,18 @@
 {
   "name": "nb_cloud_platform",
-  "version": "4.0.0",
-  "modules_version": "4.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev:m": "vue-cli-service serve --mode modules",
-    "build:m": "cross-env VUE_APP_NAME=modules vue-cli-service build",
-    "dev:m2": "vue-cli-service serve --mode modules2",
-    "build:m2": "cross-env VUE_APP_NAME=modules2 vue-cli-service build",
+    "dev:phar": "vue-cli-service serve --mode phar",
+    "build:phar": "cross-env VUE_APP_FRAME=dashboard vue-cli-service build",
+    "dev:tran": "vue-cli-service serve --mode tran",
+    "build:tran": "cross-env VUE_APP_FRAME=transboard vue-cli-service build",
     "lint": "eslint --fix --ext .js,.vue src",
     "dll": "webpack -p --progress --config ./webpack.dll.conf.js",
     "test:unit": "vue-cli-service test:unit",
     "test:cov": "vue-cli-service test:unit --coverage",
-    "build:m:b": "cross-env BundleAnalyzerPlugin=true npm run build:m",
-    "build:m2:b": "cross-env BundleAnalyzerPlugin=true npm run build:m"
+    "build:phar:b": "cross-env BundleAnalyzerPlugin=true npm run build:m",
+    "build:tran:b": "cross-env BundleAnalyzerPlugin=true npm run build:m"
   },
   "dependencies": {
     "axios": "^0.19.0",

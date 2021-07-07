@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-04-02 09:49:51
  * @ Modified by: feixiang.wu
- * @ Modified time: 2021-03-12 13:55:13
+ * @ Modified time: 2021-07-05 15:03:39
  * @ Description: vue-cli3配置文件
  */
 
@@ -33,7 +33,7 @@ const staticPath = process.env.NODE_ENV === 'production' ? {
 module.exports = {
   runtimeCompiler: true,
   publicPath: process.env.NODE_ENV === 'development' ? '/' : './',
-  outputDir: 'dist-' + process.env.VUE_APP_NAME,
+  outputDir: 'dist-' + process.env.VUE_APP_FRAME,
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
@@ -73,23 +73,23 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('@core', resolve('src/core'))
-      .set('@modulesboard', resolve('src/frames/modulesboard'))
-      .set('@modules2board', resolve('src/frames/modules2board'))
+      .set('@dashboard', resolve('src/frames/dashboard'))
+      .set('@transboard', resolve('src/frames/transboard'))
 
     // set svg-sprite-loader
     // 下面不能使用别名加载
     config.module
       .rule('svg')
       .exclude.add(resolve('src/core/icons/svg'))
-      .add(resolve('src/frames/modulesboard/icons'))
-      .add(resolve('src/frames/modules2board/icons'))
+      .add(resolve('src/frames/dashboard/icons'))
+      .add(resolve('src/frames/transboard/icons'))
       .end()
     config.module
       .rule('icons')
       .test(/\.svg$/)
       .include.add(resolve('src/core/icons/svg'))
-      .add(resolve('src/frames/modulesboard/icons'))
-      .add(resolve('src/frames/modules2board/icons'))
+      .add(resolve('src/frames/dashboard/icons'))
+      .add(resolve('src/frames/transboard/icons'))
       .end()
       .use('svg-sprite-loader')
       .loader('svg-sprite-loader')
@@ -131,7 +131,7 @@ module.exports = {
       },
       sass: {
         // 全局变量
-        prependData: '@import "src/frames/modulesboard/styles/var.scss"; @import "src/frames/modulesboard/styles/mixin.scss";'
+        prependData: '@import "src/frames/dashboard/styles/var.scss"; @import "src/frames/dashboard/styles/mixin.scss";'
       }
     }
   }

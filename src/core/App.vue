@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-01-08 11:17:18
  * @ Modified by: feixiang.wu
- * @ Modified time: 2021-03-08 14:44:24
+ * @ Modified time: 2021-07-05 14:59:35
  * @ Description: 统一处理所有文件 问题1 重复注入问题2 如果modules下无对应文件夹会导致错误需处理
  -->
 
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import KeyBoard from '@modulesboard/components/KeyBoard/KeyBoard'
+import KeyBoard from '@dashboard/components/KeyBoard/KeyBoard'
 // import CallBack from '@core/utils/callback.js'
 // import WebSocketClass from '@core/utils/socket'
 
@@ -176,7 +176,7 @@ export default {
       // 设置标题显示
       document.title = globalVar.appName
 
-      const frame = require('@/frames/' + process.env.VUE_APP_NAME + 'board/index').default
+      const frame = require('@/frames/' + process.env.VUE_APP_FRAME + '/index').default
 
       // 注册Store各个模块
       for (const name in frame.store) {

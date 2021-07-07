@@ -15,7 +15,7 @@ window.globalVar = {
   sIreveAddress: 'R2000-A1SC-00000010',//  图像识别终端地址
   appName: '深圳诺博智能图像识别车 V1.0.0', // 系统名称
   baseUrl: 'http://127.0.0.1:8093/dsm-txsb', //请求api地址 正式环境使用
-  frame: 'modulesboard', // 使用基座名称
+  frame: 'dashboard', // 使用基座名称
   pageHome: '', // 指定一个首页，值为路由 name
   pageSize: 10, // 表格每页显示数量
   ws: {

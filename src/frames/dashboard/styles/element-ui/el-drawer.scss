@@ -1,0 +1,61 @@
+/**
+ * @ Author: feixiang.wu
+ * @ Create Time: 2020-07-30 17:01:41
+ * @ Modified by: feixiang.wu
+ * @ Modified time: 2020-10-26 09:40:39
+ * @ Description: 抽屉
+ */
+
+.custom-drawer-default.el-drawer.rtl {
+  height: 960px;
+  margin-top: 20px;
+  margin-right: 28px;
+  background: #FFEFEF;
+
+  .el-drawer__body {
+    position: relative;
+  }
+}
+
+.el-notification-default {
+	.el-notification__group {
+		.el-notification__content {
+			p {
+				font-size: 38px;
+				color: $waring-text-color;
+				font-family: $bold-font-family;
+			}
+		}
+
+		.el-notification__closeBtn {
+			display: none;
+		}
+	}
+}
+
+//断网
+.el-notification-network {
+	width: 100%;
+	height: 80px;
+	background: #FFEEEE;
+	bottom: 0!important;
+	right: 0;
+	border: none;
+	border-radius: 0;
+	font-size: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&.right {
+		right: 0;
+		bottom: 0;
+	}
+
+	.el-notification__icon {
+		width: 43px;
+		height: 43px;
+		font-size: 43px;
+		color:#F66B6E;
+	}
+}

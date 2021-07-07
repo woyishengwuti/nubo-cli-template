@@ -1,0 +1,507 @@
+/**
+ * @ Author: feixiang.wu
+ * @ Create Time: 2020-06-17 11:06:13
+ * @ Modified by: feixiang.wu
+ * @ Modified time: 2020-12-01 09:56:55
+ * @ Description: 表格
+ */
+
+// table
+.el-table {
+	.el-table__body-wrapper {
+		// padding: 0 30px;
+		.el-table__empty-block {
+			.el-table__empty-text {
+				font-size: 28px;
+				color: $title-color;
+				line-height: 76px;
+			}
+		}
+	}
+	
+	// 复选框
+	th.el-table-column--selection, td.el-table-column--selection {
+    > .cell {
+      .el-checkbox {
+        .el-checkbox__input {
+					.el-checkbox__inner {
+						width: 32px;
+						height: 32px;
+						border: 3px solid $primary-color;
+						cursor: pointer;
+						border-radius: 4px;
+
+						&::after {
+							width: 6px;
+							height: 15px;
+							left: 10px;
+							border-width: 3px;
+							top: 3px;
+						}
+	
+						&::before {
+							top: 12px;
+							height: 5px;
+						}
+					}
+				}
+				
+        .el-checkbox__input.is-disabled {
+					.el-checkbox__inner {
+						background-color: #ebedf1;     
+						border-color: #cacfd9;
+					}
+				}
+
+				.el-checkbox__input.is-indeterminate {
+					.el-checkbox__inner {
+						background: $back-color-gray;
+
+						&::before {
+							width: 26px;
+							height: 3px;
+							background: $primary-color;
+						}
+					}
+				}
+      }
+    }
+	}
+
+	.el-table-column--selection {
+		.cell {
+			padding-left: 14px;
+			padding-right: 14px;
+		}
+	}
+
+	// 基础样式
+	th {
+		padding: 21px 0 19px 0;
+		background: rgba($back-color-gray, 0.6);
+
+		> .cell {
+			font-size: 24px;
+			color: rgba($title-color, 0.8);
+			font-family: $font-family;
+			overflow: visible;
+			
+			// 排序
+			.caret-wrapper {
+				.sort-caret {
+					// border: solid 12px transparent;
+					border-width: 12px;
+					left: 10px;
+				}
+
+				.sort-caret.ascending {
+					top: -9px;
+					// border-bottom-color: $border-color-dark;
+				}
+
+				.sort-caret.descending {
+					bottom: -10px;
+					// border-top-color: $border-color-dark;
+				}
+			}
+		}
+	}
+	
+	// 基础样式
+	td {
+		padding: 24px 0;
+		font-size: 24px;
+		// height: 80px;
+		// line-height: 80px;
+		color: $title-color;
+		
+		.cell {
+			line-height: 1.2;
+			font-family: $font-family;
+			overflow: visible;
+			
+      .drug-style {
+        font-size: 32px;
+        font-family: $font-family;
+        font-weight: 400;
+			}
+
+			.sbatch-wrapper {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+
+      .operate {
+        width: 36px;
+				height: 36px;
+        border-radius: 50%;
+        font-size: 32px;
+        color: $back-color;
+        display: inline-block;
+				text-align: center;
+				cursor: pointer;
+				position: relative;
+			}
+			
+      .plus {
+				background-color: $primary-color;
+				
+				&::before {
+					content: '';
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					width: 22px;
+					transform: translate(-50%, -50%);
+					border-radius: 2px;
+					border-top: 4px solid $back-color;
+				}
+		
+				&::after {
+					content: '';
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					height: 22px;
+					border-radius: 2px;
+					transform: translate(-50%, -50%);
+					border-left: 4px solid $back-color;
+				}
+			}
+			
+      .reduce {
+        background-color: $border-color;
+				
+				&::before {
+					content: '';
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					width: 22px;
+					border-radius: 2px;
+					transform: translate(-50%, -50%);
+					border-top: 4px solid $back-color;
+				}
+			}
+
+			.el-select.select-default-sbatch {
+				margin-left: 10px;
+			}
+			
+			.title-style {
+        font-family: $font-family;
+        color: $title-color;
+        font-size:32px;
+			}
+			
+      .quant {
+        color: $primary-color;
+			}
+			
+			.disabled {
+				.el-input {
+					.el-input__inner {
+						pointer-events: none;
+
+						&:hover {
+							border: none;
+						}
+					}	
+				}
+			}
+		}
+
+		// 显示小点
+		.cell.el-tooltip {
+			overflow: hidden;
+			text-overflow: ellipsis;
+				
+			.ellipsis {
+				overflow: hidden;
+    		text-overflow: ellipsis;
+			}
+		}
+	}
+
+	th.dialog-input {
+		.cell {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	// 输入框
+	td.dialog-input {
+		.cell {
+			padding-left: 0;
+			padding-right: 0;
+
+			.single-number {
+				font-size: 38px;
+				color: $primary-color;
+				font-family: $sub-font-family;
+			}
+		}
+	}
+
+	th:nth-child(1), td:nth-child(1) {
+		padding-left: 30px;
+	}
+
+	tr.current-row {
+		background-color: rgba($primary-color, 0.1);
+	}
+
+	tr.row-current {
+		background-color: rgba($primary-color, 0.06);
+
+		td.drug-name {
+			color: $primary-color;
+		}
+	}
+
+	// 复选选中
+	// 品名
+	tr.checked {
+		background: rgba($primary-color, 0.048);
+		
+		td.s-drug-name {
+			.cell {
+				color: $primary-color;
+				font-size: 32px;
+				font-family: $bold-font-family;
+
+				.ellipsis {
+					.bold-font-family {
+						color: $primary-color;
+						font-size: 32px;
+						font-family: $bold-font-family;
+					}
+				}
+			}
+		}
+	}
+
+	tr.err-num {
+		td {
+			.cell {
+				.dialog-input-default {
+					.el-input {
+						.el-input__inner {
+							color: $waring-text-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// disabled
+	tr.disabled {
+		td {
+			.cell {
+				color: rgba($title-color, 0.3)!important;
+
+				> * {
+					color: rgba($title-color, 0.3)!important;
+				}
+			}
+		}
+	}
+
+	// 行自定义样式信息
+	tr {
+		td.stock {
+			.cell {
+				font-family: $sub-font-family;
+				font-size: 38px;
+			}
+		}
+	
+		td.err.drug-name,
+		td.err.actual {
+			.cell {
+				color: $waring-text-color;
+			}
+		}
+	
+		// 表格内部颜色定义
+		td.lighter {
+			.cell {
+				color: rgba($title-color, 0.6);
+			}
+		}
+	
+		td.light {
+			.cell {
+				color: rgba($title-color, 0.8);
+	
+				.stock {
+					font-size: 26px;
+					font-family: $reg-font-family;
+				}
+			}
+		}
+		
+		// "思源黑体 CN Medium"
+		td.bold {
+			.cell {
+				font-family: $bold-font-family;
+				font-size: 32px;
+
+				span.s-drug-name {
+					font-family: $bold-font-family;
+					font-size: 32px;
+				}
+			}
+		}
+	
+		// 增加几种额外的样式定义
+
+		// 26ox
+		td.fz26px {
+			.cell {
+				font-size: 26px;
+			}
+		}
+	
+		// 38ox
+		td.fz38px {
+			.cell {
+				font-size: 38px;
+			}
+		}
+
+		// 48px
+		td.fz48px {
+			.cell {
+				font-size: 48px;
+			}
+		}
+
+		// 32ox
+		td.fz32px {
+			.cell {
+				font-size: 32px;
+			}
+		}
+	
+		//Montserrat Regular
+		td.m-regular {
+			.cell {
+				font-family: $reg-font-family;
+
+				span {
+					font-family: $reg-font-family;
+				}
+			}
+		}
+	
+		// "思源黑体 CN Medium"
+		td.bold-font-family {
+			.cell {
+				font-family: $bold-font-family;
+			}
+
+			span.bold-font-family {
+				font-family: $bold-font-family;
+			}
+		}
+
+		// "Montserrat Light"
+		td.sub-font-family {
+			.cell {
+				font-family: $sub-font-family;
+			}
+
+			span.sub-font-family {
+				font-family: $sub-font-family;
+			}
+		}
+	
+		// 主色 #5474E5
+		td.primary-color {
+			.cell {
+				color: $primary-color;
+			}
+		}
+	
+		// 错误颜色 #F66B6E
+		td.error-color {
+			.cell {
+				color: $waring-text-color;
+			}
+		}
+	
+		// 警示颜色 #F4B263
+		td.warning-color {
+			.cell {
+				color: $warning-color;
+			}
+		}
+
+		td.color {
+			.cell {
+				// 主色 #5474E5
+				.primary-color {
+					color: $primary-color;
+				}
+			
+				// 错误颜色 #F66B6E
+				.error-color {
+					color: $waring-text-color;
+				}
+
+				// 正确颜色 #00B99C
+				.correct-color {
+					color: $correct-text-color;
+				}
+			
+				// 警示颜色 #F4B263
+				.warning-color {
+					color: $warning-color;
+				}
+			}
+		}
+	}
+
+	// 空
+	.el-table__empty-block {
+		color: red;
+		.el-table__empty-text {
+			width: 100%;
+			height: 100%;
+			position: relative;
+
+			.empty-wrap {
+				position: absolute;
+				top: 60px;
+				left: 50%;
+				transform: translateX(-50%);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.icon {
+					width: 498px;
+					height: 432px;
+	
+					.svg-icon {
+						width: 498px;
+						height: 432px;
+					}
+				}
+	
+				.text {
+					margin-top: 20px;
+					font-size: 32px;
+					color: rgba($title-color, 0.6);
+					text-align: center;
+					line-height: 1;
+				}
+			}
+		}
+	}
+}

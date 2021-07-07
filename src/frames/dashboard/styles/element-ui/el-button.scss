@@ -1,0 +1,147 @@
+/**
+ * @ Author: feixiang.wu
+ * @ Create Time: 2020-08-03 08:57:58
+ * @ Modified by: feixiang.wu
+ * @ Modified time: 2020-11-26 17:44:09
+ * @ Description: 按钮默认白底蓝字
+ */
+
+// 按钮
+// 按钮样式覆盖 - 一级界面的取药回收等按钮样式
+.el-button-middle {
+	padding: 23px 72px 21px 72px;
+	border-radius: 8px;
+	
+	span {
+		font-size: 28px;
+		color: $back-color;
+		font-family: $font-family;
+	}
+}
+
+// size="default" 440 * 80
+.el-button {
+  font-size: 28px;
+  padding: 27px 136px;
+  border-radius: 8px;
+  border: 1px solid $border-color;
+}
+
+// size="mini" 96 * 56
+.el-button--mini {
+  font-size: 24px;
+  padding: 16px 25px;
+  border-radius: 4px;
+}
+
+// size="small" 200 * 72
+.el-button--small {
+  font-size: 28px;
+  padding: 23px 72px;
+  border-radius: 8px;
+}
+
+// size="medium" 260 * 64
+.el-button--medium {
+  font-size: 28px;
+  padding: 17px 57px;
+  border-radius: 8px;
+
+  .svg-icon {
+    width: 30px!important;
+    height: 30px!important;
+  }
+}
+
+// 白底蓝字 - type = ''
+.el-button--default {
+  color: $primary-color;
+  background: $text-color;
+
+  span {
+    color: $primary-color;
+  }
+
+  &:active, &:focus, &:hover {
+    background: $text-color;
+  }
+}
+
+// 蓝底白字 - type = 'primary'
+.el-button--primary {
+  color: $text-color;
+  background: $primary-color;
+
+  span {
+    color: $text-color;
+  }
+
+  &:active, &:focus, &:hover {
+    background: $primary-color;
+  }
+}
+
+// 红底白字 - type = 'danger'
+.el-button--danger {
+  color: $text-color;
+  background: $waring-text-color;
+
+  span {
+    color: $text-color;
+  }
+
+  &:active, &:focus, &:hover {
+    background: $waring-text-color;
+  }
+}
+
+// 灰底白字 - type="info"
+.el-button--info {
+  color: $text-color;
+  background: $border-color;
+
+  span {
+    color: $text-color;
+  }
+}
+
+// 带图标的按钮
+.el-button-default--icon {
+  padding: 9px 62px 9px 38px;
+
+  span {
+    display: flex;
+    align-items: center;
+
+    .svg-icon {
+      width: 46px;
+      height: 46px;
+    }
+
+    span {
+      margin-left: 1px;
+    }
+  }
+}
+
+// 带图标的按钮
+.el-button-medium--icon {
+  padding: 9px 82px 9px 74px;
+  border: 2px solid $border-color;
+
+  span {
+    display: flex;
+    align-items: center;
+
+    .svg-icon {
+      width: 46px!important;
+      height: 46px!important;
+    }
+
+    span {
+      margin-left: 2px;
+    }
+  }
+}
+
+
