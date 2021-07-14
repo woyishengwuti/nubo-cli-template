@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev:phar": "vue-cli-service serve --mode phar",
-    "build:phar": "cross-env VUE_APP_FRAME=dashboard vue-cli-service build",
+    "dev:m": "vue-cli-service serve --mode modules",
+    "build:m": "cross-env VUE_APP_FRAME=dashboard vue-cli-service build",
     "dev:tran": "vue-cli-service serve --mode tran",
     "build:tran": "cross-env VUE_APP_FRAME=transboard vue-cli-service build",
     "lint": "eslint --fix --ext .js,.vue src",
     "dll": "webpack -p --progress --config ./webpack.dll.conf.js",
     "test:unit": "vue-cli-service test:unit",
     "test:cov": "vue-cli-service test:unit --coverage",
-    "build:phar:b": "cross-env BundleAnalyzerPlugin=true npm run build:m",
+    "build:m:b": "cross-env BundleAnalyzerPlugin=true npm run build:m",
     "build:tran:b": "cross-env BundleAnalyzerPlugin=true npm run build:m"
   },
   "dependencies": {

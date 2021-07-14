@@ -2,7 +2,7 @@
  * @ Author: feixiang.wu
  * @ Create Time: 2020-04-02 13:37:11
  * @ Modified by: feixiang.wu
- * @ Modified time: 2021-03-12 13:31:37
+ * @ Modified time: 2021-07-14 18:01:27
  * @ Description: 导航栏
  -->
 
@@ -116,9 +116,6 @@ export default {
         if (!modules.children || modules.children.length === 0) {
           // 只处理子元素
           const p = await _import(modules.folder)
-
-          // 需要生成路由的菜单
-          // const menusRouter = [modules]
 
           // 路由 如果菜单只有四个路由 文件夹内部又存在另外的路由 则进行合并
           this.childRouter[0].children = p.router.concat(p.routerStatic)

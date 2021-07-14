@@ -1,10 +1,13 @@
 ## 说明
 
-诺博Vue项目模板，适用于小型项目，即业务单纯的项目， 如AGV，高低值耗材类，智慧病区和PDA类项目
+诺博Vue项目模板，适用于小型项目
 药品线请使用其他模板
 
-* phar 药库PDA
-* tran 转运PDA
+## 更改步骤
+1. clone项目之后更改.env.*文件，修改后缀名为当前项目缩写，同时修改package.json中的开发环境和生产环境指令
+2. 在src/frames/dashboard/layout/components/NavBar.vue中讲静态菜单（getMenus）修改成从后台接口获取的菜单数据
+3. 各自的模块在各自文件夹下开发，防止影响其他模块，全局通用模块放在core下，此项目通用放在frames/dashboard下
+4. 安装脚手架工具，在modules等模块文件夹下执行 nubo inims personalCenter 生成项目模块代码（修改其中的不合适地方）
 
 ### Compiles and hot-reloads for development
 
