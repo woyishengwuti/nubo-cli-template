@@ -11,8 +11,10 @@
     "dll": "webpack -p --progress --config ./webpack.dll.conf.js",
     "test:unit": "vue-cli-service test:unit",
     "test:cov": "vue-cli-service test:unit --coverage",
-    "build:m:b": "cross-env BundleAnalyzerPlugin=true npm run build:m",
-    "build:tran:b": "cross-env BundleAnalyzerPlugin=true npm run build:m"
+    "prepare": "husky install",
+    "lint:eslint": "eslint --fix --ext \"src/**/*.{vue,less,css,scss}\"",
+    "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -33,6 +35,8 @@
   "devDependencies": {
     "@babel/core": "7.7.7",
     "@babel/register": "^7.7.7",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@vue/cli-plugin-babel": "^4.1.2",
     "@vue/cli-plugin-eslint": "^4.1.2",
     "@vue/cli-service": "^4.3.1",
@@ -42,12 +46,17 @@
     "babel-polyfill": "^6.26.0",
     "compression-webpack-plugin": "^3.0.1",
     "cross-env": "^7.0.3",
-    "eslint": "^6.8.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "6.1.2",
+    "husky": "^7.0.2",
     "inquirer": "^7.0.1",
+    "lint-staged": "^11.1.2",
     "mockjs": "1.1.0",
     "node-sass": "^4.14.0",
     "postcss-plugin-px2rem": "^0.8.1",
+    "prettier": "^2.3.2",
     "sass-loader": "^8.0.0",
     "sass-resources-loader": "^2.0.1",
     "svg-sprite-loader": "^4.2.5",
@@ -59,6 +68,13 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
   },
   "browserslist": [
     "> 1%",

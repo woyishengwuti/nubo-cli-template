@@ -8,7 +8,12 @@
 
 const path = require('path')
 
+// gzip 压缩
+const CompressionWebpackPlugin = require('compression-webpack-plugin')
+const productionGzipExtensions = /\.(js|css|json|txt|html|svg)(\?.*)?$/i
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+// 用来查看项目svg
+// const WebpackSvgPlugin = require('webpack-svg-plugin')
 
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -48,11 +53,18 @@ module.exports = {
   },
   configureWebpack: {
     plugins: [
-      process.env.BundleAnalyzerPlugin ? new BundleAnalyzerPlugin() : () => {}
-      // new webpack.DllReferencePlugin({
-      //   context: process.cwd(),
-      //   manifest: require('./public/dll/vendor-manifest.json')
-      // })
+      // new WebpackSvgPlugin({
+      //   filesPath: resolve('src')
+      // }),
+      new CompressionWebpackPlugin({
+        filename: '[path].gz[query]',
+        algorithm: 'gzip',
+        test: productionGzipExtensions, // 匹配文件名
+        threshold: 10240, // 对10K以上的数据进行压缩
+        minRatio: 0.6,
+        deleteOriginalAssets: false
+      }),
+      new BundleAnalyzerPlugin()
     ]
   },
   chainWebpack: config => {
